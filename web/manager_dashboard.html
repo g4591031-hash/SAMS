@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>SAMS | Organizer Dashboard</title>
+<title>SAMS | Manager Dashboard</title>
 
 <!-- Chart.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -65,18 +65,12 @@ th{background:var(--secondary);color:var(--primary);}
         <h3>Total Events</h3>
         <p id="stat-total">0</p>
       </div>
-      <div class="stat-card">
-        <h3>Active Events</h3>
-        <p id="stat-active">0</p>
-      </div>
+    
       <div class="stat-card">
         <h3>Total Bookings</h3>
         <p id="stat-bookings">0</p>
       </div>
-      <div class="stat-card">
-        <h3>Revenue (₹)</h3>
-        <p id="stat-revenue">0</p>
-      </div>
+     
     </div>
 
     <div class="card">
@@ -198,9 +192,7 @@ async function loadMyEvents(){
     content.innerHTML = `
       <div class="stats-grid">
         <div class="stat-card"><h3>Total Events</h3><p>${total}</p></div>
-        <div class="stat-card"><h3>Active Events</h3><p>${active}</p></div>
-        <div class="stat-card"><h3>Total Bookings</h3><p>${bookings}</p></div>
-        <div class="stat-card"><h3>Revenue (₹)</h3><p>${bookings*100}</p></div>
+        <div class="stat-card"><h3>Total Bookings</h3><p>2</p></div>
       </div>
       <div class="card">
         <h3>My Events</h3>
@@ -279,13 +271,13 @@ function showProfile(){
     <div class="card">
       <div class="profile-container">
         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile-avatar" alt="Profile Picture">
-        <h2>Organizer Profile</h2>
+        <h2>Manager Profile</h2>
       </div>
       <form class="profile-form" id="profileForm">
         <label>Full Name</label>
-        <input type="text" name="name" value="John Doe" required>
+        <input type="text" name="name" value="Dharani" required>
         <label>Email</label>
-        <input type="email" name="email" value="johndoe@gmail.com" required>
+        <input type="email" name="email" value="dharani@gmail.com" required>
         <label>Phone</label>
         <input type="text" name="phone" value="9876543210" required>
         <label>Organization</label>

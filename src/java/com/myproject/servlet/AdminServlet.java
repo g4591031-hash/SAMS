@@ -44,18 +44,6 @@ public class AdminServlet extends HttpServlet {
                     json.put("bookings", rs1.getInt("total_bookings"));
                 }
 
-                // Approved and Pending events (based on 'Active' status)
-                ResultSet rs2 = st.executeQuery(
-                    "SELECT " +
-                    "SUM(LOWER(status)='active') AS approved, " +
-                    "SUM(LOWER(status)!='active') AS pending " +
-                    "FROM events"
-                );
-                if (rs2.next()) {
-                    json.put("approved", rs2.getInt("approved"));
-                    json.put("pending", rs2.getInt("pending"));
-                }
-
                 out.print(json.toString());
             }
 

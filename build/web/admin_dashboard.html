@@ -208,8 +208,8 @@ body {
     <div class="stats-grid" id="statsGrid">
       <div class="stat-card"><h3>₹1,25,000</h3><p>Total Revenue</p></div>
       <div class="stat-card"><h3>245</h3><p>Total Bookings</p></div>
-      <div class="stat-card"><h3>34</h3><p>Approved Events</p></div>
-      <div class="stat-card"><h3>8</h3><p>Pending Events</p></div>
+      <div class="stat-card"><h3>34</h3><p>total Events</p></div>
+     
     </div>
   </div>
 
@@ -263,8 +263,8 @@ async function loadStats() {
     grid.innerHTML = `
       <div class="stat-card"><h3>₹${data.revenue}</h3><p>Total Revenue</p></div>
       <div class="stat-card"><h3>${data.bookings}</h3><p>Total Bookings</p></div>
-      <div class="stat-card"><h3>${data.approved}</h3><p>Approved Events</p></div>
-      <div class="stat-card"><h3>${data.pending}</h3><p>Pending Events</p></div>
+      <div class="stat-card"><h3>3</h3><p>Approved Events</p></div>
+      
     `;
   } catch (err) {
     console.log("Static data mode active.");

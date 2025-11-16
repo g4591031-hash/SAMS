@@ -89,7 +89,7 @@ public class StudentServlet extends HttpServlet {
                 String email = request.getParameter("email");
                 String department = request.getParameter("department");
                 String year = request.getParameter("year");
-
+                
                 PreparedStatement ps = con.prepareStatement(
                         "UPDATE users SET username=?, email=?, department=?, year=? WHERE user_id=?");
                 ps.setString(1, username);

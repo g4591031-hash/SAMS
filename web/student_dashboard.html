@@ -468,7 +468,7 @@ async function loadEvents() {
             d.className = 'card';
             d.innerHTML = `
                 <h3>${escapeHtml(ev.title)}</h3>
-                <p><strong>📅</strong> ${ev.event_date || 'TBA'}</p>
+                <p><strong>📅</strong> ${ev.event_date || 'RK VALLEY'}</p>
                 <p>${escapeHtml(ev.description || '')}</p>
                 <button class="btn-book" onclick="location.href='seat_selection.html?name=${encodeURIComponent(ev.title)}&date=${encodeURIComponent(ev.event_date || '')}'">Book Now</button>
             `;

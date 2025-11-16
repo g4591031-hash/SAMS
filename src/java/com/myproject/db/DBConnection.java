@@ -13,7 +13,7 @@ public class DBConnection {
                     "jdbc:mysql://localhost:3306/samsdb", "root", "Swadhu177!");
             System.out.println("✅ Database connected successfully!");
             return con;
-        } catch (Exception e) {=
+        } catch (Exception e) {
             e.printStackTrace(); // Print exact error
             return null;
         }
